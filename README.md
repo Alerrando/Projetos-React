@@ -1,18 +1,98 @@
-# Projetos-React
-Meus projetos com ReactJS
+<p>Todos os projetos foram criados usando o <a href="https://vitejs.dev/guide/">Vite</a></p>
+
+## `npm run dev`
+Executa o aplicativo no modo de desenvolvimento.<br />
+Abra [http://127.0.0.1:5173/](http://127.0.0.1:5173/) para vê-lo no navegador.
+
+A página será recarregada se você fizer edições.
+Você também verá quaisquer erros de fiapos no console.</p>
+<hr>
 
 
-# Contador Simples
-![Contador - React](https://user-images.githubusercontent.com/90356500/179575448-4788e100-db0d-429c-8ea8-7ce924747cc3.png)
+## Métodos de criação
+<br>
+Com NPM:
 
-# Controle de Temperatura  
-![Controle de Temperatura - Frio](https://user-images.githubusercontent.com/90356500/179575531-5f28a05a-d6c8-4211-bec3-a7207eb28562.png)
-![Controle de Temperatura - Quente](https://user-images.githubusercontent.com/90356500/179575533-52ec525e-becb-42fa-89c8-36ef3f5f3391.png)
+```
+$ npm create vite@latest
+```
 
-# Quiz
-![Quiz - Perguntas](https://user-images.githubusercontent.com/90356500/180613255-bdf2580b-11e6-4298-b7ee-d1f8e1bc5790.png)
-![Quiz - Score](https://user-images.githubusercontent.com/90356500/180613235-5236958a-c39c-4a4f-a29a-884201c7e3d6.png)
+Com Yarn:
+```
+$ yarn create vite
+```
 
-# Navbar
-![Navbar - Close](https://user-images.githubusercontent.com/90356500/180672864-d3d806a4-c37c-4afa-8b2d-48a633c6cff8.png)
-![Navbar - Open](https://user-images.githubusercontent.com/90356500/180672862-3e52afad-6750-45de-ab75-a1e43d1ffa5f.png)
+Com PNPM:
+```
+$ pnpm create vite
+```
+</br>
+<h3>Caso queira especificar o nome do projeto e o modelo, você pode utilizar comandos adicionais. Um exemplo com Vite + Vue:</h3>
+
+```
+# npm 6.x
+npm create vite@latest my-vue-app --template vue
+
+# npm 7+, extra double-dash is needed:
+npm create vite@latest my-vue-app -- --template vue
+
+# yarn
+yarn create vite my-vue-app --template vue
+
+# pnpm
+pnpm create vite my-vue-app --template vue
+```
+<hr>
+
+## 🖥️ Projetos Demos
+<br/>
+
+### Calculadora
+<div align="center">
+    <img src="./Calculadora/github/CalculadoraPc.gif" alt="gif do projeto calculadora">
+</div>
+
+<br/>
+
+### Contador Simples
+<div align="center">
+    <img src="./Contador-Simples/github/ContadorPc.gif" alt="gif do projeto contador simples">
+</div>
+
+<br/>
+
+### Controle de Temperatura
+<div align="center">
+    <img src="./Controle de Temperatura/github/ControleTemperaturaPc.gif" alt="gif do projeto controle de temperatura">
+</div>
+
+<br/>
+
+### Formulário
+<div align="center">
+    <img src="./Formulario/github/FormularioPc.gif" alt="gif do projeto formulario">
+</div>
+
+<br/>
+
+### Navbar
+<div align="center">
+    <img src="./Navbar/github/NavbarMobile.gif" alt="gif do projeto navbar">
+</div>
+
+<br/>
+
+### Quiz
+<div align="center">
+    <img src="./Quiz/github/QuizPc.gif" alt="gif do projeto quiz">
+</div>
+
+<br/>
+
+### To Do
+<div align="center">
+    <img src="./To Do/github/ToDoPc.gif" alt="gif do projeto to do list">
+</div>
+
+<hr />
+<p>Alerrando © 2022 Obrigado por acessar</p>

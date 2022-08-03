@@ -8,7 +8,6 @@ A página será recarregada se você fizer edições.
 Você também verá quaisquer erros de fiapos no console.</p>
 <hr>
 
-
 ## Métodos de criação
 <br>
 Com NPM:

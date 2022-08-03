@@ -16,20 +16,13 @@
 <h3>Instalação Tailwind CSS</h3>
 
 ```
-with npm
 npm install -D tailwindcss
-
-with npx
 npx tailwindcss init
 ```
 
 <h3>Instalação Post CSS</h3>
 
 ```
-with npm
-npm install -D tailwindcss postcss autoprefixer
-
-with npx
 npx tailwindcss init -p
 ```
 

@@ -58,10 +58,12 @@ export function App() {
 	}
 
 	function upDownQuant(item: itemsProps, direction: string) {
-
 		if (direction == "left")
-			item.quant--;
-		else
+		{
+			if(item.quant > 0)
+				item.quant--;
+		}
+		else if(direction == "right")
 			item.quant++;
 
 		setItems([...items])

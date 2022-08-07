@@ -93,5 +93,10 @@ pnpm create vite my-vue-app --template vue
     <img src="./To Do/github/ToDoPc.gif" alt="gif do projeto to do list">
 </div>
 
+### Shopping List
+<div align="center">
+    <img src="./Shopping List/github/ShoppingListPc.gif" alt="gif do lista de compras">
+</div>
+
 <hr />
 <p>Alerrando © 2022 Obrigado por acessar</p>

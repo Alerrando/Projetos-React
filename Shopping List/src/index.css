@@ -66,6 +66,10 @@ input:focus {
   outline: 0;
 }
 
+.addPlus{
+  cursor: pointer;
+}
+
 .item-list {
   display: flex;
   flex-direction: column;
@@ -125,6 +129,7 @@ button {
   margin: 5px 3px;
   color: #ec645b;
 }
+
 button:focus {
   outline: 0;
 }

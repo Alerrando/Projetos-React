@@ -1,11 +1,17 @@
 import { Trash } from "phosphor-react";
 
-export function Note() {
+type NoteProps = {
+  id: number,
+  text: string,
+  date: string,
+}
+
+export function Note(props: NoteProps) {
   return (
     <div className="note">
-      <span>Hello World!</span>
+      <span>{props.text}</span>
       <div className="note-footer">
-        <small>16/08/2022</small>
+        <small>{props.date}</small>
         <Trash
             size={32} 
             weight="bold" 

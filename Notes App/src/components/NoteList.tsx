@@ -1,12 +1,17 @@
 import { Note } from "./Note";
 
-export function NoteList(){
+type NoteListProps = {
+    notes: any[]
+}
+
+export function NoteList(props: NoteListProps){
+    const notes = props.notes
+    
     return (
         <div className="note-list">
-            <Note />
-            <Note />
-            <Note />
-            <Note />
+            {notes.map((note:any) => {
+                return <Note id={note.id} text={note.text} date={note.date} />
+            })}
         </div>
     )
 }

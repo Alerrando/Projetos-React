@@ -2,7 +2,7 @@ import { Note } from "./Note";
 
 export function NoteList(){
     return (
-        <div className="notes-list">
+        <div className="note-list">
             <Note />
             <Note />
             <Note />

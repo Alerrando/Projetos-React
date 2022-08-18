@@ -1,8 +1,11 @@
 import { useState } from 'react'
+import { NoteList } from './components/NoteList'
 
 export function App() {
 
   return (
-    <h1>Hello World</h1>
+    <div className="container">
+      <NoteList />
+    </div>
   )
 }

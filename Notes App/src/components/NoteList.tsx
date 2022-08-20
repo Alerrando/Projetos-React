@@ -3,6 +3,7 @@ import { AddNote } from './AddNote'
 
 type NoteListProps = {
   notes: any[];
+  handleAddNote: (text:object) => void
 };
 
 export function NoteList(props: NoteListProps) {
@@ -14,7 +15,7 @@ export function NoteList(props: NoteListProps) {
         return <Note id={note.id} text={note.text} date={note.date} />;
       })}
       
-      <AddNote />
+      <AddNote handleAddNote={props.handleAddNote} />
     </div>
   );
 }

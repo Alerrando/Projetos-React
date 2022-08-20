@@ -15,7 +15,7 @@ export function Note(props: NoteProps) {
         <Trash
             size={32} 
             weight="bold" 
-            className="delete-icon" 
+            className="delete-icon cursor-pointer" 
         />
       </div>
     </div>

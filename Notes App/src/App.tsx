@@ -28,9 +28,14 @@ export function App() {
       date: "18/08/2022",
     },
   ]);
+
+  function addNote(text:object){
+    setNotes([...notes, text])
+  }
+
   return (
     <div className="container">
-      <NoteList notes={notes} />
+      <NoteList notes={notes} handleAddNote={addNote} />
     </div>
   );
 }

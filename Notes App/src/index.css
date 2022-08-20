@@ -30,6 +30,32 @@ code {
     justify-content: space-between;
     min-height: 170px;
     padding: 1rem;
+    white-space: pre-wrap;
+}
+
+.note.new, textarea{
+    background-color: #67d7cc;
+}
+
+.save{
+    background-color: #e1e1e1;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    padding: 5px 10px;
+}
+
+.save:hover{
+    background-color: #ededed;
+}
+
+textarea{
+    border: none;
+    resize: none;
+}
+
+textarea:focus{
+    outline: none;
 }
 
 .note-footer{

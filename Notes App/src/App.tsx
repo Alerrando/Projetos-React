@@ -29,6 +29,7 @@ export function App() {
       date: "18/08/2022",
     },
   ]);
+  const [search, setSearch] = useState<string>('')
 
   function addNote(text: object) {
     setNotes([...notes, text]);
@@ -41,10 +42,10 @@ export function App() {
 
   return (
     <div className="container">
-      <Search />
-      
+      <Search handleSearchNote={setSearch} />
+
       <NoteList
-        notes={notes}
+        notes={notes.filter((note) => note.text.toLowerCase().includes(search))}
         handleAddNote={addNote}
         handleDeleteNote={deleNote}
       />

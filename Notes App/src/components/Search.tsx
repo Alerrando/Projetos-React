@@ -1,10 +1,20 @@
 import { MagnifyingGlass } from "phosphor-react";
 
-export function Search(){
-    return(
-        <div className="search">
-            <MagnifyingGlass size={22} weight="bold" />
-            <input type="text" placeholder="Search" />
-        </div>
-    )
+type SearchProps = {
+  handleSearchNote: (search: string) => void;
+};
+
+export function Search(props: SearchProps) {
+  return (
+    <div className="search">
+      <MagnifyingGlass size={21} weight="bold" />
+      <input
+        type="text"
+        placeholder="Search"
+        onChange={(e) =>
+          props.handleSearchNote((e.target as HTMLInputElement).value)
+        }
+      />
+    </div>
+  );
 }

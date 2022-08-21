@@ -29,13 +29,22 @@ export function App() {
     },
   ]);
 
-  function addNote(text:object){
-    setNotes([...notes, text])
+  function addNote(text: object) {
+    setNotes([...notes, text]);
+  }
+
+  function deleNote(id: string) {
+    const newNotes = notes.filter((note) => note.id !== id);
+    setNotes(newNotes);
   }
 
   return (
     <div className="container">
-      <NoteList notes={notes} handleAddNote={addNote} />
+      <NoteList
+        notes={notes}
+        handleAddNote={addNote}
+        handleDeleteNote={deleNote}
+      />
     </div>
   );
 }

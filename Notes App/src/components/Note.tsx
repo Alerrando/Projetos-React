@@ -1,10 +1,12 @@
 import { Trash } from "phosphor-react";
 
 type NoteProps = {
-  id: string,
-  text: string,
-  date: string,
-}
+  id: string;
+  text: string;
+  date: string;
+  notes: any[];
+  handleDeleteNote: (id: string) => void;
+};
 
 export function Note(props: NoteProps) {
   return (
@@ -13,9 +15,10 @@ export function Note(props: NoteProps) {
       <div className="note-footer">
         <small>{props.date}</small>
         <Trash
-            size={32} 
-            weight="bold" 
-            className="delete-icon cursor-pointer" 
+          size={32}
+          weight="bold"
+          className="delete-icon"
+          onClick={() => props.handleDeleteNote(props.id)}
         />
       </div>
     </div>

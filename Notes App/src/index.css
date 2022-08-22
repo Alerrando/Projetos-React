@@ -10,9 +10,24 @@ code {
     font-family: source-code-pro, Menlo, Monaco, 'Consolar, Courier New', monospace;
 }
 
+.header{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.dark-mode{
+    background-color: black;
+}
+
+.dark-mode h1{
+    color: white;
+}
+
 .container{
     max-width: 960px;
     margin: 0 auto;
+    min-height: 100vh;
     padding: 0 15px;
 }
 

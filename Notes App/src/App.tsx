@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { nanoid } from "nanoid";
 import { NoteList } from "./components/NoteList";
 import { Search } from "./components/Search";
@@ -30,7 +30,8 @@ export function App() {
       date: "18/08/2022",
     },
   ]);
-  const [search, setSearch] = useState<string>('')
+  const [search, setSearch] = useState<string>("");
+  const [darkMode, setDarkMode] = useState<boolean>(false);
 
   function addNote(text: object) {
     setNotes([...notes, text]);
@@ -42,16 +43,16 @@ export function App() {
   }
 
   return (
-    <div className="container">
-      <Header />
-
-      <Search handleSearchNote={setSearch} />
-
-      <NoteList
-        notes={notes.filter((note) => note.text.toLowerCase().includes(search))}
-        handleAddNote={addNote}
-        handleDeleteNote={deleNote}
-      />
+    <div className={`${darkMode && 'dark-mode'}`}>
+      <div className="container">
+        <Header handleToogleDarkMode={setDarkMode} />
+        <Search handleSearchNote={setSearch} />
+        <NoteList
+          notes={notes.filter((note) => note.text.toLowerCase().includes(search))}
+          handleAddNote={addNote}
+          handleDeleteNote={deleNote}
+        />
+      </div>
     </div>
   );
 }

@@ -9,10 +9,14 @@ export function App() {
   const [darkMode, setDarkMode] = useState<boolean>(false);
 
   useEffect(() => {
+    try{
       const savedNotes = JSON.parse(localStorage.getItem('react-notes-app-data') || "");
-      console.log(savedNotes)
+
       if(savedNotes.length > 0)
         setNotes(savedNotes);
+    } catch(err:any){
+      console.log(err)
+    }
 	}, []);
 
 	useEffect(() => {

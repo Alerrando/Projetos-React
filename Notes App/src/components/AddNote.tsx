@@ -17,7 +17,7 @@ export function AddNote(props: AddNoteProps) {
       const aux = {
         id: nanoid(),
         text: noteText,
-        date: `${data.getDate()}/${mes}/${data.getFullYear()}`,
+        date: `${data.getDate()}/${mes}/${data.getFullYear()} - ${data.getHours()}:${data.getMinutes()}:${data.getSeconds()}`,
       };
       props.handleAddNote(aux);
       setNoteText("");

@@ -8,23 +8,22 @@ type NoteListProps = {
 };
 
 export function NoteList(props: NoteListProps) {
-  const notes = props.notes;
 
   return (
     <div className="note-list">
-      {notes.map((note: any) => {
-        return (
+      {props.notes.map((note, index) => (
           <Note
+            key={index}
             id={note.id}
             text={note.text}
             date={note.date}
-            notes={notes}
+            notes={note.notes}
             handleDeleteNote={props.handleDeleteNote}
           />
-        );
-      })}
+        )
+      )}
 
-      <AddNote handleAddNote={props.handleAddNote} />
+      <AddNote handleAddNote={props.handleAddNote}/>
     </div>
   );
 }

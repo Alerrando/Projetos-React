@@ -10,7 +10,7 @@ type NoteProps = {
 
 export function Note(props: NoteProps) {
   return (
-    <div className="note" id={props.id}>
+    <div className="note">
       <span>{props.text}</span>
       <div className="note-footer">
         <small>{props.date}</small>

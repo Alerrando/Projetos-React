@@ -41,7 +41,10 @@ export function App() {
         <Header handleToogleDarkMode={setDarkMode} />
         <Search handleSearchNote={setSearch} />
         <NoteList
-          notes={notes.filter((note) => note.text.toLowerCase().includes(search))}
+          notes={notes.filter((note) => Object.values(note.text)
+            .join("")
+            .toLowerCase()
+            .includes(search.toLowerCase()))}
           handleAddNote={addNote}
           handleDeleteNote={deleNote}
         />

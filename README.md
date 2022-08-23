@@ -81,9 +81,16 @@ pnpm create vite my-vue-app --template vue
 
 <br/>
 
-### Quiz
+### Notes App
 <div align="center">
-    <img src="./Quiz/github/QuizPc.gif" alt="gif do projeto quiz">
+    <img src="./Notes App/github/NoteAppPc.gif" alt="gif do notes app">
+</div>
+
+<br/>
+
+### Shopping List
+<div align="center">
+    <img src="./Shopping List/github/ShoppingListPc.gif" alt="gif do lista de compras">
 </div>
 
 <br/>
@@ -93,10 +100,12 @@ pnpm create vite my-vue-app --template vue
     <img src="./To Do/github/ToDoPc.gif" alt="gif do projeto to do list">
 </div>
 
-### Shopping List
+### Quiz
 <div align="center">
-    <img src="./Shopping List/github/ShoppingListPc.gif" alt="gif do lista de compras">
+    <img src="./Quiz/github/QuizPc.gif" alt="gif do projeto quiz">
 </div>
+
+<br/>
 
 <hr />
 <p>Alerrando © 2022 Obrigado por acessar</p>

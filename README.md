@@ -5,7 +5,7 @@ Executa o aplicativo no modo de desenvolvimento.<br />
 Abra [http://127.0.0.1:5173/](http://127.0.0.1:5173/) para vê-lo no navegador.
 
 A página será recarregada se você fizer edições.
-Você também verá quaisquer erros de fiapos no console.</p>
+Você também verá quaisquer erros no console.</p>
 <hr>
 
 ## Métodos de criação
